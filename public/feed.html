@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="una.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- News Feed Container -->
+  <div class="feed-container">
+    <h1>Your Personalized News Feed</h1>
+    
+    <div id="newsFeed" class="news-feed">
+      <!-- Sample News Article -->
+      <div class="news-article">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.juDo8a_p5VtZ7imXbO5ErQHaEK&pid=Api&P=0&h=180" alt="News Image" />
+        <div class="news-content">
+          <h2>Sample News Headline</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <!-- Additional news articles would be dynamically generated here -->
+    </div>
+  </div>
+
+  <script src="feed.js"></script>
+</body>
+</html>

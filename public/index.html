@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="una.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Centralized Content Container -->
+  <div class="central-container">
+    <!-- Big Text -->
+    <h1 class="big-text">Get started</h1>
+
+    <!-- Navigation Links (Centered Buttons) -->
+    <div class="nav-links-centered">
+      <button id="signInBtn" class="fade-in">Sign In</button>
+      <button id="signUpBtn" class="fade-in">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignIn">&times;</span>
+      <h2>Sign In</h2>
+      <form id="signInForm">
+        <input type="email" id="signInEmail" placeholder="Email" required />
+        <input type="password" id="signInPassword" placeholder="Password" required />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+<div id="signUpModal" class="modal">
+  <div class="modal-content">
+    <span id="closeSignUp" class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signUpForm">
+      <input type="text" id="signUpName" placeholder="Name" required>
+      <input type="email" id="signUpEmail" placeholder="Email" required>
+      <input type="password" id="signUpPassword" placeholder="Password" required>
+      <input type="text" id="otp" placeholder="Enter OTP" required>
+      <button type="button" id="sendOtpBtn">Send OTP</button>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Topics Selection -->
+  <div id="topicsSection" class="topics-section hidden">
+    <h2>Select Your Interests</h2>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search topics..." />
+      <button id="searchButton">
+        <img src="http://cdn.onlinewebfonts.com/svg/img_388871.png" alt="Search" />
+      </button>
+    </div>
+    
+    <!-- Topics with Scrollable Area -->
+    <div class="topics-container">
+      <div class="topics">
+        <label><input type="checkbox" value="Travel & Adventure" /> Travel & Adventure</label>
+        <label><input type="checkbox" value="Fashion & Style" /> Fashion & Style</label>
+        <label><input type="checkbox" value="Finance" /> Finance</label>
+        <label><input type="checkbox" value="Education & Learning" /> Education & Learning</label>
+        <label><input type="checkbox" value="Environment & Sustainability" /> Environment & Sustainability</label><label>
+        <label><input type="checkbox" value="Parenting & Family" /> Parenting & Family</label>
+        <label><input type="checkbox" value="DIY & Crafts" /> DIY & Crafts</label>
+        <label><input type="checkbox" value="Art & Design" /> Art & Design</label>
+        <label><input type="checkbox" value="Music" /> Music</label><label>
+        <label><input type="checkbox" value="Movies & TV Shows" /> Movies & TV Shows</label>
+        <label><input type="checkbox" value="Books & Literature" /> Books & Literature</label>
+        <label><input type="checkbox" value="History" /> History</label>
+        <label><input type="checkbox" value="Politics & Current Affairs" /> Politics & Current Affairs</label>
+        <label><input type="checkbox" value="Psychology & Mental Health" /> Psychology & Mental Health</label>
+        <label><input type="checkbox" value="Relationships" /> Relationships</label>
+        <label><input type="checkbox" value="Sports" /> Sports</label>
+        <label><input type="checkbox" value="Gaming" /> Gaming</label>
+        <label><input type="checkbox" value="Business & Entrepreneurship" /> Business & Entrepreneurship</label>
+        <label><input type="checkbox" value="Marketing & Advertising" /> Marketing & Advertising</label>
+        <label><input type="checkbox" value="Startups & Innovation" /> Startups & Innovation</label>
+        <label><input type="checkbox" value="Photography" /> Photography</label>
+        <label><input type="checkbox" value="Gardening" /> Gardening</label>
+        <label><input type="checkbox" value="Home Improvement" /> Home Improvement</label>
+        <label><input type="checkbox" value="Real Estate" /> Real Estate</label>
+        <label><input type="checkbox" value="Cars & Automotive" /> Cars & Automotive</label>
+        <label><input type="checkbox" value="Science Fiction & Fantasy" /> Science Fiction & Fantasy</label>
+        <label><input type="checkbox" value="Philosophy" /> Philosophy</label>
+        <label><input type="checkbox" value="Entertainment" /> Entertainment</label>
+        <label><input type="checkbox" value="Spirituality & Religion" /> Spirituality & Religion</label>
+        <label><input type="checkbox" value="Social Media" /> Social Media</label>
+        <label><input type="checkbox" value="Pets & Animals" /> Pets & Animals</label>
+        <label><input type="checkbox" value="Cooking & Baking" /> Cooking & Baking</label>
+        <label><input type="checkbox" value="Hobbies & Interests" /> Hobbies & Interests</label><label>
+        <label><input type="checkbox" value="Productivity & Time Management" /> Productivity & Time Management</label>
+        <label><input type="checkbox" value="Career Development" /> Career Development</label>
+        <label><input type="checkbox" value="Languages & Linguistics" /> Languages & Linguistics</label>
+        <label><input type="checkbox" value="Economics" /> Economics</label>
+        <label><input type="checkbox" value="Astronomy & Space" /> Astronomy & Space</label>
+        <label><input type="checkbox" value="Artificial Intelligence" /> Artificial Intelligence</label>
+        <label><input type="checkbox" value="Blockchain & Cryptocurrency" /> Blockchain & Cryptocurrency</label>
+        <label><input type="checkbox" value="Graphic Design" /> Graphic Design</label>
+        <label><input type="checkbox" value="Interior Design" /> Interior Design</label><label>
+        <label><input type="checkbox" value="Ethical Living" /> Ethical Living</label>
+        <label><input type="checkbox" value="Climate Change" /> Climate Change</label>
+        <label><input type="checkbox" value="Cultural Studies" /> Cultural Studies</label>
+        <label><input type="checkbox" value="Environmental Conservation" /> Environmental Conservation</label>  
+      </div>
+    </div>
+    <button id="saveTopics">Save Topics</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
