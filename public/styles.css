@@ -317,3 +317,68 @@ body {
 .learn-more:hover {
     text-decoration: underline;
 }
+
+/* OTP Modal */
+#otpModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  }
+  
+  #otpModal .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  #otpModal h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  #otpModal input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff6f61;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  #otpModal button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #otpModal button:hover {
+    background-color: #ff8a75;
+  }
+  
+  /* Close Button */
+  #otpModal .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #ff6f61;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
